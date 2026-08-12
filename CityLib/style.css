@@ -1,0 +1,149 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --purple-magenta: hsl(317, 54%, 26%);
+  --vibrant-magenta-purple: rgba(155, 69, 127);
+  --deep-orchid: rgb(158, 49, 114);
+  --success-bg-color: rgba(231, 245, 234);
+  --error-bg-color: rgba(252, 235, 234);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header-title{
+  color: var(--purple-magenta);
+}
+
+.catalog .title, 
+.members .title {
+  color:var(--vibrant-magenta-purple);
+  font-size: 1.2rem;
+}
+
+header {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+header > div {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+
+.message {
+  width: 60%;
+  padding: 0.6rem;
+  margin: 2rem auto;
+  border-radius: 6px;
+}
+
+.success {
+  color: green;
+  background-color: var(--success-bg-color);
+  border: 1px solid hsla(120, 100%, 50%, 0.1)
+
+}
+
+.error {
+  color:red;
+  background-color: var(--error-bg-color);
+  border: 1px solid hsla(0, 100%, 50%, 0.1)
+
+}
+
+main {
+  width: 60%;
+
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td{
+  padding: 0.5rem;
+}
+
+td {
+  border-bottom: 1px solid rgb(221, 219, 219);
+}
+
+tr:first-child {
+  background-color: var(--purple-magenta);
+  color:white;
+}
+
+.members {
+  margin: 2rem auto;
+
+}
+
+input[type="text"] {
+  width: 13ch;
+  padding: 0.2rem;
+}
+
+.borrowed-items{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-between;
+  margin: 0.5rem;
+}
+
+.btn,
+.return-btn,
+.pay-btn{
+  background:none;
+  border:none;
+  background-color: rgba(136, 136, 136);
+  color:white;
+  padding: 0.4rem 0.5rem;
+  border-radius: 3px;
+}
+.pay-btn {
+  background-color:var(--deep-orchid);
+}
+.return-btn {
+  background-color: var(--deep-orchid);
+}
+
+select {
+  padding: 0.2rem;
+}
+
+button:hover,
+select:hover {
+  cursor: pointer;
+}
+
+.btn:disabled,
+.pay-btn:disabled {
+  background-color: rgba(199, 199, 199);
+  cursor: not-allowed;
+}
+
+
+
+.available {
+  color:green;
+}
+
+.checked-out {
+  color: red;
+}
